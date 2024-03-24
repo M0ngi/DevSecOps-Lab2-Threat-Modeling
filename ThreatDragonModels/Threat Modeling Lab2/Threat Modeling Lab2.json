@@ -2524,7 +2524,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Web \nServlet",
-              "description": "",
+              "description": "Frontend Server",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -2571,6 +2571,45 @@
                   "new": false,
                   "number": 3,
                   "score": ""
+                },
+                {
+                  "id": "00e45eca-4b71-4707-ac3d-edfb3294996c",
+                  "title": "Log manipulation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "An attacker may attempt to hide their activities.",
+                  "mitigation": "- Implement logging\n- Limit access/manipulation of logs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "228b7ab2-10b7-4245-baf3-621b97348ef2",
+                  "title": "Authentication Bypass",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker may attempt to bypass authentication interface.",
+                  "mitigation": "- Implement proper access controls.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "8e92ff23-7ce7-46bf-b95a-7de0810694f0",
+                  "title": "Impersonating Users",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker may attempt to impersonate another user (Bruteforcing password, taking actions...)",
+                  "mitigation": "- Monitor account activities\n- Strict password policies",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
                 }
               ]
             }
@@ -2609,7 +2648,47 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "42e82789-95f6-42f8-a310-ec69fdba1c5a",
+                  "title": "Resource Exhausting",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker may attempt to exhaust the server resources by sending multiple requests.",
+                  "mitigation": "- Apply rate limits\n- Auto scale resources",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "e2022d10-931b-477c-8b88-926428df9759",
+                  "title": "Error Handling",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker can extract information from error messages.",
+                  "mitigation": "- Properly handle errors",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                },
+                {
+                  "id": "d045c727-9644-4ed6-9d46-7d2d5d1405ac",
+                  "title": "Authentication Bypass",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker may attempt to access private data/resources.",
+                  "mitigation": "Implement proper access controls",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 32,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2645,7 +2724,47 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "18b9ee0f-217c-43ef-ab35-abb4b46f15d1",
+                  "title": "Resource Exhausting",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker may attempt to exhaust the server resources by sending multiple requests.",
+                  "mitigation": "- Apply rate limits\n- Auto scale resources",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "ae57372c-cae8-4a5d-adc6-4e49e77154b5",
+                  "title": "Error Handling",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker can extract information from error messages.",
+                  "mitigation": "- Properly handle errors",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                },
+                {
+                  "id": "8dbd54e4-9f71-42b0-a8b8-7b1483d973d1",
+                  "title": "Authentication Bypass",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker may attempt to access private data/resources.",
+                  "mitigation": "Implement proper access controls",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 33,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 13
           },
@@ -2682,7 +2801,47 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "6a6fd0fa-e3f6-4fe9-a9fd-660545112d83",
+                  "title": "Resource Exhausting",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker may attempt to exhaust the server resources by sending multiple requests.",
+                  "mitigation": "- Apply rate limits\n- Auto scale resources",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "dd1cf180-efdd-4a2e-9647-1863dfb4b865",
+                  "title": "Error Handling",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker can extract information from error messages.",
+                  "mitigation": "- Properly handle errors",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                },
+                {
+                  "id": "053d18a0-026d-4e3f-92ba-8157b402b085",
+                  "title": "Authentication Bypass",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker may attempt to access private data/resources.",
+                  "mitigation": "Implement proper access controls",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 34,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 14
           },
@@ -2719,7 +2878,47 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e8a93035-d1be-461f-bb37-3c03e397313b",
+                  "title": "Resource Exhausting",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker may attempt to exhaust the server resources by sending multiple requests.",
+                  "mitigation": "- Apply rate limits\n- Auto scale resources",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "aebfbe7b-02cd-4a67-887e-4e3f1ad903cb",
+                  "title": "Error Handling",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker can extract information from error messages.",
+                  "mitigation": "- Properly handle errors",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                },
+                {
+                  "id": "af341a94-3f0d-4f68-afba-e84839760ba4",
+                  "title": "Authentication Bypass",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker may attempt to access private data/resources.",
+                  "mitigation": "Implement proper access controls",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 35,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 15
           },
@@ -2756,7 +2955,47 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "9ed8a5fc-08df-440d-9979-c9ae9bcc01ac",
+                  "title": "Resource Exhausting",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker may attempt to exhaust the server resources by sending multiple requests.",
+                  "mitigation": "- Apply rate limits\n- Auto scale resources",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "06daeff6-0edf-457c-866c-ce4a56d0cc38",
+                  "title": "Error Handling",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker can extract information from error messages.",
+                  "mitigation": "- Properly handle errors",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                },
+                {
+                  "id": "8e0e80b3-80cb-4d37-ae4a-8b2c36e4728b",
+                  "title": "Authentication Bypass",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker may attempt to access private data/resources.",
+                  "mitigation": "Implement proper access controls",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 16
           },
@@ -2793,7 +3032,47 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "bbce4ccf-96a7-4a0c-9890-6c59940e7a8e",
+                  "title": "Resource Exhausting",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker may attempt to exhaust the server resources by sending multiple requests.",
+                  "mitigation": "- Apply rate limits\n- Auto scale resources",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "c880de41-2797-4b80-bf2f-9bd5be78926c",
+                  "title": "Error Handling",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker can extract information from error messages.",
+                  "mitigation": "- Properly handle errors",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                },
+                {
+                  "id": "a8caadcd-dc1b-4931-99db-51a9b9716236",
+                  "title": "Authentication Bypass",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker may attempt to access private data/resources.",
+                  "mitigation": "Implement proper access controls",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 17
           },
@@ -2830,7 +3109,47 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "58b28ef5-7d12-4177-8173-9f5fb04e9314",
+                  "title": "Resource Exhausting",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker may attempt to exhaust the server resources by sending multiple requests.",
+                  "mitigation": "- Apply rate limits\n- Auto scale resources",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "45188b53-b99f-4b91-98e2-2c917a0c199b",
+                  "title": "Error Handling",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker can extract information from error messages.",
+                  "mitigation": "- Properly handle errors",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
+                },
+                {
+                  "id": "1e698f45-0193-43f3-bda9-cc73e8f042e9",
+                  "title": "Authentication Bypass",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "An attacker may attempt to access private data/resources.",
+                  "mitigation": "Implement proper access controls",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 36,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 18
           },
@@ -2872,7 +3191,21 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "90c688be-192d-4bc1-9999-1c822fa94f55",
+                  "title": "Webpage file tampering",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker may attempt to modify HTML/JS/CSS Files and/or other resources.",
+                  "mitigation": "Prevent unauthorized access.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2886,7 +3219,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Auth\nService"
+                "text": "Load\nbalancer"
               },
               "body": {
                 "stroke": "#333333",
@@ -2899,7 +3232,7 @@
             "id": "6cc4dc88-d695-48b1-8c5b-3e7f02dd7e8f",
             "data": {
               "type": "tm.Process",
-              "name": "Auth\nService",
+              "name": "Load\nbalancer",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -2908,7 +3241,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "56afb13b-9356-4f4b-9fab-3b7e6e33b7bf",
+                  "title": "Resource Exhausting",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker may attempt to exhaust the server resources by sending multiple requests.",
+                  "mitigation": "- Apply rate limits\n- Auto scale resources",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 20
           },
@@ -2945,7 +3292,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2d519ff8-c857-456f-aeb2-dd3b5ad2048e",
+                  "title": "SQL Injection",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker may attempt to inject/manipulate SQL Queries in order to read/modify data.",
+                  "mitigation": "Sanitize user inputs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 21
           },
@@ -2982,7 +3343,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "97bff212-c01b-434f-88d5-1c4fc7db0fa3",
+                  "title": "SQL Injection",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker may attempt to inject/manipulate SQL Queries in order to read/modify data.",
+                  "mitigation": "Sanitize user inputs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 22
           },
@@ -3019,7 +3394,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "390c2c38-7a37-4eaf-95b8-d3386ba7c78e",
+                  "title": "SQL Injection",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker may attempt to inject/manipulate SQL Queries in order to read/modify data.",
+                  "mitigation": "Sanitize user inputs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 23
           },
@@ -3056,7 +3445,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "39873430-e751-4665-9010-972af588b814",
+                  "title": "SQL Injection",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker may attempt to inject/manipulate SQL Queries in order to read/modify data.",
+                  "mitigation": "Sanitize user inputs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 24
           },
@@ -3093,7 +3496,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "8c44143f-f521-450c-be1d-ed511210e289",
+                  "title": "SQL Injection",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker may attempt to inject/manipulate SQL Queries in order to read/modify data.",
+                  "mitigation": "Sanitize user inputs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 25
           },
@@ -3130,7 +3547,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "54cfd657-f5f6-47b9-b58a-87ba1cfb1c25",
+                  "title": "SQL Injection",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker may attempt to inject/manipulate SQL Queries in order to read/modify data.",
+                  "mitigation": "Sanitize user inputs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 26
           },
@@ -3167,7 +3598,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2a18b243-1a4a-4ed8-a098-6ad25191c5f5",
+                  "title": "SQL Injection",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker may attempt to inject/manipulate SQL Queries in order to read/modify data.",
+                  "mitigation": "Sanitize user inputs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ]
             },
             "zIndex": 27
           },
@@ -3463,6 +3908,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 36
   }
 }
