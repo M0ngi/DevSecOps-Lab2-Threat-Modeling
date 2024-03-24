@@ -2,14 +2,23 @@
   "version": "2.2.0",
   "summary": {
     "title": "Threat Modeling Lab2",
-    "owner": "",
+    "owner": "Med Mongi Saidane, Salma Seddik, Naima Attia, Med Amine Bouchank",
     "description": "",
     "id": 0
   },
   "detail": {
     "contributors": [
       {
-        "name": "seddiksalma@gmail.com"
+        "name": "Med Mongi Saidane"
+      },
+      {
+        "name": "Salma Seddik"
+      },
+      {
+        "name": "Med Amine Bouchank"
+      },
+      {
+        "name": "Naima Attia"
       }
     ],
     "diagrams": [
@@ -3907,7 +3916,7 @@
       }
     ],
     "diagramTop": 1,
-    "reviewer": "",
+    "reviewer": "Alyssa Berriche",
     "threatTop": 36
   }
 }
